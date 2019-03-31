@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('nm', function (){
+    event( new App\Events\NewMessage('hello'));
+});
