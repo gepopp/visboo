@@ -98,18 +98,19 @@ return [
          * certificate chain of issuers. The private key also may be contained
          * in a separate file specified by local_pk.
          */
-        'local_cert' => null, // '/etc/nginx/ssl/visboo.at/521253/server.crt',
+        'local_cert' => '/etc/nginx/ssl/visboo.at/521486/server.crt',
 
         /*
          * Path to local private key file on filesystem in case of separate files for
          * certificate (local_cert) and private key.
          */
-        'local_pk' => null, // '/etc/nginx/ssl/visboo.at/521253/server.key',
+        'local_pk' => '/etc/nginx/ssl/visboo.at/521486/server.key',
 
         /*
          * Passphrase for your local_cert file.
          */
         'passphrase' => null,
+        'verify_peer' => false
     ],
 
     /*
