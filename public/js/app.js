@@ -59238,7 +59238,7 @@ if (token) {
 
 
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
-console.log(Object({"MIX_PUSHER_APP_KEY":"asdf","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}));
+console.log(Object({"MIX_PUSHER_APP_KEY":"asdf","MIX_PUSHER_APP_CLUSTER":"mt1","MIX_DEVELOPEMENT":"dev","NODE_ENV":"development"}));
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
   key: "asdf",
@@ -59248,7 +59248,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   wssPort: 6001,
   disableStats: true,
   enabledTransports: ['ws', 'wss'],
-  encrypted: Object({"MIX_PUSHER_APP_KEY":"asdf","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).APP_ENV == 'local' ? false : true
+  encrypted: Object({"MIX_PUSHER_APP_KEY":"asdf","MIX_PUSHER_APP_CLUSTER":"mt1","MIX_DEVELOPEMENT":"dev","NODE_ENV":"development"}).APP_ENV == 'local' ? false : true
 });
 
 /***/ }),
