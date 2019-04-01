@@ -48,7 +48,6 @@ import Echo from 'laravel-echo'
 
 window.Pusher = require('pusher-js');
 
-console.log(process.env);
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
@@ -59,5 +58,5 @@ window.Echo = new Echo({
     wssPort: 6001,
     disableStats: true,
     enabledTransports: ['ws', 'wss'],
-    encrypted: process.env.APP_ENV == 'local' ? false : true
+    encrypted: window.location.hostname == 'visboo.at' ? true : false
 });
