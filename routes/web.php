@@ -17,3 +17,7 @@ Route::get('/', function () {
 Route::get('nm', function (){
     event( new App\Events\NewMessage('hello'));
 });
+
+Route::get('env', function (){
+   dd(env('APP_ENV'));
+});
