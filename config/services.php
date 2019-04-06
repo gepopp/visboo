@@ -43,5 +43,8 @@ return [
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
     ],
+    'campaign_monitor' => [
+        'key' => env('CAMPAIGN_MONITOR_KEY')
+    ]
 
 ];
